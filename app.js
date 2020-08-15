@@ -38,7 +38,7 @@ function validateEmail() {
 function validatePhone() {
     const phone = document.getElementById('phone');
     //const re = /^\(?\d{3}\)?[-. ]?\d{3}[-. ]?\d{4}$/; // USA PHONE VALIDATION
-    const re = /^\+[44]?\d[0-9]{11}$/; //UK VALIDATION (MUST INCLUDE +44 AT START )
+    const re = /^\+[44]\d[0-9]{11}$/; //UK VALIDATION (MUST INCLUDE +44 AT START )
     if (!re.test(phone.value)) {
         phone.classList.add('is-invalid');
     } else {
