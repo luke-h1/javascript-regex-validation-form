@@ -1,6 +1,6 @@
 // validation form blur event listeners
 
-document.getElementById('name').addEventListener('blur', ValidateName);
+document.getElementById('name').addEventListener('blur', validateName);
 document.getElementById('postcode').addEventListener('blur', validatePostcode);
 document.getElementById('email').addEventListener('blur', validateEmail);
 document.getElementById('phone').addEventListener('blur', validatePhone);
@@ -27,7 +27,7 @@ function validatePostcode() {
 
 function validateEmail() {
     const email = document.getElementById('email');
-    const re = /^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\.]+)\.([a-zA-Z]{2,5})$/;
+    const re =  /^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/;
     if (!re.test(email.value)) {
         email.classList.add('is-invalid');
     } else {
