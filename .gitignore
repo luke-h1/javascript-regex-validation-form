@@ -1,1 +1,4 @@
-.vercel
+.vercel 
+tests/*.html
+tests/*.xml
+tests/*.log
