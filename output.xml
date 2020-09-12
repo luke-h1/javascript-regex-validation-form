@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.8.5 on darwin)" generated="20200912 10:39:12.661" rpa="false">
+<suite id="s1" name="Tests" source="/Users/lukehowsam/srv/dev/javascript-regex-validation-form/tests/tests.robot">
+<kw name="Run Keywords" library="BuiltIn" type="setup">
+<doc>Executes all the given keywords in a sequence.</doc>
+<status status="PASS" starttime="20200912 10:39:12.808" endtime="20200912 10:39:12.808"></status>
+</kw>
+<test id="s1-t1" name="NAME VALIDATION">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>https://javascript-regex-validation-form.vercel.app/</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20200912 10:39:12.809" level="INFO">Opening browser 'chrome' to base url 'https://javascript-regex-validation-form.vercel.app/'.</msg>
+<status status="PASS" starttime="20200912 10:39:12.809" endtime="20200912 10:39:16.388"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20200912 10:39:17.390" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200912 10:39:16.388" endtime="20200912 10:39:17.390"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>id=name</arg>
+</arguments>
+<msg timestamp="20200912 10:39:17.391" level="INFO">Clicking element 'id=name'.</msg>
+<status status="PASS" starttime="20200912 10:39:17.391" endtime="20200912 10:39:17.466"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20200912 10:39:18.468" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200912 10:39:17.466" endtime="20200912 10:39:18.469"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>id=name</arg>
+</arguments>
+<assign>
+<var>${"name"}</var>
+</assign>
+<msg timestamp="20200912 10:39:18.469" level="INFO">${"name"} = id=name</msg>
+<status status="PASS" starttime="20200912 10:39:18.469" endtime="20200912 10:39:18.469"></status>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>${"name"}</arg>
+</arguments>
+<msg timestamp="20200912 10:39:18.489" level="INFO">Element 'id=name' is displayed.</msg>
+<status status="PASS" starttime="20200912 10:39:18.470" endtime="20200912 10:39:18.489"></status>
+</kw>
+<kw name="Element Should Be Enabled" library="SeleniumLibrary">
+<doc>Verifies that element identified by ``locator`` is enabled.</doc>
+<arguments>
+<arg>${"name"}</arg>
+</arguments>
+<status status="PASS" starttime="20200912 10:39:18.489" endtime="20200912 10:39:18.506"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${"name"}</arg>
+<arg>Luke</arg>
+</arguments>
+<msg timestamp="20200912 10:39:18.506" level="INFO">Typing text 'Luke' into text field 'id=name'.</msg>
+<status status="PASS" starttime="20200912 10:39:18.506" endtime="20200912 10:39:18.585"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20200912 10:39:21.588" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20200912 10:39:18.586" endtime="20200912 10:39:21.588"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>id=postcode</arg>
+</arguments>
+<msg timestamp="20200912 10:39:21.589" level="INFO">Clicking element 'id=postcode'.</msg>
+<status status="PASS" starttime="20200912 10:39:21.588" endtime="20200912 10:39:21.629"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20200912 10:39:24.630" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20200912 10:39:21.629" endtime="20200912 10:39:24.630"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20200912 10:39:24.631" endtime="20200912 10:39:24.700"></status>
+</kw>
+<status status="PASS" starttime="20200912 10:39:12.808" endtime="20200912 10:39:24.700" critical="yes"></status>
+</test>
+<test id="s1-t2" name="POSTCODE VALIDATION">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>https://javascript-regex-validation-form.vercel.app/</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20200912 10:39:24.701" level="INFO">Opening browser 'chrome' to base url 'https://javascript-regex-validation-form.vercel.app/'.</msg>
+<status status="PASS" starttime="20200912 10:39:24.701" endtime="20200912 10:39:28.189"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20200912 10:39:29.193" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200912 10:39:28.190" endtime="20200912 10:39:29.193"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>id=postcode</arg>
+</arguments>
+<msg timestamp="20200912 10:39:29.193" level="INFO">Clicking element 'id=postcode'.</msg>
+<status status="PASS" starttime="20200912 10:39:29.193" endtime="20200912 10:39:29.266"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20200912 10:39:30.268" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200912 10:39:29.266" endtime="20200912 10:39:30.268"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>id=postcode</arg>
+</arguments>
+<assign>
+<var>${"POSTCODE"}</var>
+</assign>
+<msg timestamp="20200912 10:39:30.270" level="INFO">${"POSTCODE"} = id=postcode</msg>
+<status status="PASS" starttime="20200912 10:39:30.269" endtime="20200912 10:39:30.270"></status>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>${"POSTCODE"}</arg>
+</arguments>
+<msg timestamp="20200912 10:39:30.288" level="INFO">Element 'id=postcode' is displayed.</msg>
+<status status="PASS" starttime="20200912 10:39:30.270" endtime="20200912 10:39:30.288"></status>
+</kw>
+<kw name="Element Should Be Enabled" library="SeleniumLibrary">
+<doc>Verifies that element identified by ``locator`` is enabled.</doc>
+<arguments>
+<arg>${"POSTCODE"}</arg>
+</arguments>
+<status status="PASS" starttime="20200912 10:39:30.288" endtime="20200912 10:39:30.305"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${"POSTCODE"}</arg>
+<arg>S62HH</arg>
+</arguments>
+<msg timestamp="20200912 10:39:30.306" level="INFO">Typing text 'S62HH' into text field 'id=postcode'.</msg>
+<status status="PASS" starttime="20200912 10:39:30.305" endtime="20200912 10:39:30.386"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20200912 10:39:35.387" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200912 10:39:30.386" endtime="20200912 10:39:35.388"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20200912 10:39:35.389" endtime="20200912 10:39:35.458"></status>
+</kw>
+<status status="PASS" starttime="20200912 10:39:24.701" endtime="20200912 10:39:35.458" critical="yes"></status>
+</test>
+<test id="s1-t3" name="EMAIL VALIDATION">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>https://javascript-regex-validation-form.vercel.app/</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20200912 10:39:35.460" level="INFO">Opening browser 'chrome' to base url 'https://javascript-regex-validation-form.vercel.app/'.</msg>
+<status status="PASS" starttime="20200912 10:39:35.460" endtime="20200912 10:39:39.050"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20200912 10:39:40.051" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200912 10:39:39.050" endtime="20200912 10:39:40.051"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>id=email</arg>
+</arguments>
+<msg timestamp="20200912 10:39:40.052" level="INFO">Clicking element 'id=email'.</msg>
+<status status="PASS" starttime="20200912 10:39:40.052" endtime="20200912 10:39:40.125"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20200912 10:39:41.127" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200912 10:39:40.125" endtime="20200912 10:39:41.127"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>id=email</arg>
+</arguments>
+<assign>
+<var>${"EMAIL"}</var>
+</assign>
+<msg timestamp="20200912 10:39:41.128" level="INFO">${"EMAIL"} = id=email</msg>
+<status status="PASS" starttime="20200912 10:39:41.128" endtime="20200912 10:39:41.128"></status>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>${"EMAIL"}</arg>
+</arguments>
+<msg timestamp="20200912 10:39:41.150" level="INFO">Element 'id=email' is displayed.</msg>
+<status status="PASS" starttime="20200912 10:39:41.129" endtime="20200912 10:39:41.150"></status>
+</kw>
+<kw name="Element Should Be Enabled" library="SeleniumLibrary">
+<doc>Verifies that element identified by ``locator`` is enabled.</doc>
+<arguments>
+<arg>${"EMAIL"}</arg>
+</arguments>
+<status status="PASS" starttime="20200912 10:39:41.150" endtime="20200912 10:39:41.168"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${"EMAIL"}</arg>
+<arg>luke@hey.com</arg>
+</arguments>
+<msg timestamp="20200912 10:39:41.168" level="INFO">Typing text 'luke@hey.com' into text field 'id=email'.</msg>
+<status status="PASS" starttime="20200912 10:39:41.168" endtime="20200912 10:39:41.252"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20200912 10:39:44.253" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20200912 10:39:41.252" endtime="20200912 10:39:44.254"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>id=postcode</arg>
+</arguments>
+<msg timestamp="20200912 10:39:44.255" level="INFO">Clicking element 'id=postcode'.</msg>
+<status status="PASS" starttime="20200912 10:39:44.254" endtime="20200912 10:39:44.298"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20200912 10:39:47.299" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20200912 10:39:44.298" endtime="20200912 10:39:47.299"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20200912 10:39:47.300" endtime="20200912 10:39:47.369"></status>
+</kw>
+<status status="PASS" starttime="20200912 10:39:35.459" endtime="20200912 10:39:47.369" critical="yes"></status>
+</test>
+<test id="s1-t4" name="PHONE VALIDATION">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>https://javascript-regex-validation-form.vercel.app/</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20200912 10:39:47.370" level="INFO">Opening browser 'chrome' to base url 'https://javascript-regex-validation-form.vercel.app/'.</msg>
+<status status="PASS" starttime="20200912 10:39:47.370" endtime="20200912 10:39:51.048"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20200912 10:39:52.051" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200912 10:39:51.049" endtime="20200912 10:39:52.051"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>id=phone</arg>
+</arguments>
+<msg timestamp="20200912 10:39:52.052" level="INFO">Clicking element 'id=phone'.</msg>
+<status status="PASS" starttime="20200912 10:39:52.052" endtime="20200912 10:39:52.128"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20200912 10:39:53.130" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200912 10:39:52.128" endtime="20200912 10:39:53.130"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20200912 10:39:54.133" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200912 10:39:53.131" endtime="20200912 10:39:54.133"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>id=phone</arg>
+</arguments>
+<assign>
+<var>${"PHONE"}</var>
+</assign>
+<msg timestamp="20200912 10:39:54.134" level="INFO">${"PHONE"} = id=phone</msg>
+<status status="PASS" starttime="20200912 10:39:54.134" endtime="20200912 10:39:54.134"></status>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>${"PHONE"}</arg>
+</arguments>
+<msg timestamp="20200912 10:39:54.153" level="INFO">Element 'id=phone' is displayed.</msg>
+<status status="PASS" starttime="20200912 10:39:54.134" endtime="20200912 10:39:54.153"></status>
+</kw>
+<kw name="Element Should Be Enabled" library="SeleniumLibrary">
+<doc>Verifies that element identified by ``locator`` is enabled.</doc>
+<arguments>
+<arg>${"PHONE"}</arg>
+</arguments>
+<status status="PASS" starttime="20200912 10:39:54.153" endtime="20200912 10:39:54.169"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${"PHONE"}</arg>
+<arg>+4407426347486</arg>
+</arguments>
+<msg timestamp="20200912 10:39:54.169" level="INFO">Typing text '+4407426347486' into text field 'id=phone'.</msg>
+<status status="PASS" starttime="20200912 10:39:54.169" endtime="20200912 10:39:54.257"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20200912 10:39:57.257" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20200912 10:39:54.257" endtime="20200912 10:39:57.258"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>id=email</arg>
+</arguments>
+<msg timestamp="20200912 10:39:57.258" level="INFO">Clicking element 'id=email'.</msg>
+<status status="PASS" starttime="20200912 10:39:57.258" endtime="20200912 10:39:57.297"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20200912 10:40:00.299" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20200912 10:39:57.298" endtime="20200912 10:40:00.299"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20200912 10:40:00.299" endtime="20200912 10:40:00.369"></status>
+</kw>
+<status status="PASS" starttime="20200912 10:39:47.370" endtime="20200912 10:40:00.369" critical="yes"></status>
+</test>
+<kw name="Run Keywords" library="BuiltIn" type="teardown">
+<doc>Executes all the given keywords in a sequence.</doc>
+<arguments>
+<arg>Close Browser</arg>
+</arguments>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20200912 10:40:00.371" endtime="20200912 10:40:00.371"></status>
+</kw>
+<status status="PASS" starttime="20200912 10:40:00.371" endtime="20200912 10:40:00.371"></status>
+</kw>
+<status status="PASS" starttime="20200912 10:39:12.662" endtime="20200912 10:40:00.371"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="0">Critical Tests</stat>
+<stat pass="4" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="4" fail="0" id="s1" name="Tests">Tests</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
