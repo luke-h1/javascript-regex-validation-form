@@ -13,7 +13,7 @@ Suite Teardown    Run Keywords    Close Browser
 #    Then they can submit the form without any errors 
 
 #    Given a user inputs an incorrect name, email, phone or postcode 
-#    then the phone will alter the user of the error 
+#    then the form will throw an error  
 
 
 
