@@ -79,7 +79,7 @@ INCORRECT PHONE
 
 # # CHECK THAT CORRECT CREDENTIALS WORKS
 
-NAME VALIDATION
+CORRECT NAME VALIDATION
     Open Browser                 https://javascript-regex-validation-form.vercel.app/    chrome 
     sleep                        1 
     Click Element                id=name 
@@ -92,7 +92,7 @@ NAME VALIDATION
     sleep                        2 
     Close Browser
 
-
+CORRECT POSTCODE VALIDATION
     Open Browser                 https://javascript-regex-validation-form.vercel.app/    chrome 
     sleep                        1 
     Click Element                id=postcode 
@@ -105,7 +105,7 @@ NAME VALIDATION
 
 
 
-EMAIL VALIDATION
+CORRECT EMAIL VALIDATION
     Open Browser                 https://javascript-regex-validation-form.vercel.app/    chrome 
     sleep                        1 
     Click Element                id=email 
@@ -119,7 +119,7 @@ EMAIL VALIDATION
     Close Browser
 
 
-PHONE VALIDATION
+CORRECT PHONE VALIDATION
     Open Browser                 https://javascript-regex-validation-form.vercel.app/    chrome 
     sleep                        1 
     Click Element                id=phone 
