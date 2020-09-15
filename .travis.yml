@@ -1,19 +1,22 @@
+---
 os: linux
 dist: bionic
-sudo: required 
+sudo: required
 addons:
-  apt: 
+  apt:
     update: true
     sources:
       - google-chrome
     packages:
       - dpkg
       - google-chrome-stable
+    before_script:
+      - ln --symbolic /usr/lib/chromium-browser/chromedriver "${HOME}/bin/chromedriver"
+      - google-chrome-stable --headless --disable-gpu --remote-debugging-port=9222 http://localhost &
 language: python
 python:
   - '3.6'
 install:
   - pip install -r requirements.txt
-  
 script:
   - robot tests/tests.robot
