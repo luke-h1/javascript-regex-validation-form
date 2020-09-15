@@ -1,7 +1,8 @@
 os: linux
 dist: bionic
+sudo: required 
 addons:
-  apt:
+  apt: 
     update: true
     sources:
       - google-chrome
@@ -15,8 +16,4 @@ install:
   - pip install -r requirements.txt
   
 script:
-  - wget https://chromedriver.storage.googleapis.com/85.0.4183.87/chromedriver_mac64.zip 
-  - unzip *.zip 
-  - sudo mv chromedriver /usr/local/bin 
-  - sudo echo "export PATH=$HOME/usr/bin:/usr/local.bin:$PATH" >> ${HOME}.bashrc 
   - robot tests/tests.robot
